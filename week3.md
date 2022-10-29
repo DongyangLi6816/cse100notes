@@ -68,7 +68,7 @@ AVLLeft(a): // Perform a left AVL rotation on node a
 - BST properties
 - The **balance factor** of a node u is equal to the height of u's right subtree minus the height of u's left subtree
 - A Binary Search Tree is an **AVL Tree** if, for all nodes u in the tree, the balance factor of u is either **-1, 0, or 1**
-- **AVL Tree** containing n nodes has a height that is indeed O(log n).
+- **AVL Tree** containing n nodes has a height that is indeed **O(log n)**.
 - AVL Tree has a **worst-case** time complexity of **O(log n)**.
 ### Methods
 - Insertion
@@ -82,3 +82,8 @@ AVLLeft(a): // Perform a left AVL rotation on node a
 ### Visualization
 - [AVLTree](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
 ## Red-Black Trees
+### Properties
+- All nodes must be either red or black
+- Root must be black
+- If a node is red, all of its children must be black
+- For any given node u, every possible path from u to a "null reference" (i.e., an empty left or right child) must contain the same number of **black** nodes
